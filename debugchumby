@@ -1,0 +1,7 @@
+stop_control_panel
+
+mkdir -p /tmp/images
+export PATH=/mnt/usb:$PATH
+
+(button.pl & wheel.pl) | alarm.pl 120 | draw_graph.pl
+
